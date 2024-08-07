@@ -5,3 +5,8 @@ server:
 spring:
   application:
     name: spring-test
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/produtos?useSSL=false&allowPublicKeyRetrieval=true}
+    username: ${SPRING_DATASOURCE_URL:user}
+    password: ${SPRING_DATASOURCE_URL:user}
+    driver-class-name: com.mysql.cj.jdbc.Driver

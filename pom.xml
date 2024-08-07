@@ -35,13 +35,27 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
-		<!-- spring web dependency-->
+		<!-- SPRING WEB DEPENDENCY -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- spring test dependency-->
+		<!-- SPRING DATA JPA DEPENDENCY -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- MYSQL CONNECTOR DEPENDENCY -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+		</dependency>
+
+
+		<!-- SPRING TEST DEPENDENCY -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
