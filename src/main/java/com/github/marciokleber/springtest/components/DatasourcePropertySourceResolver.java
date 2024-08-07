@@ -4,17 +4,22 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PropertySourceResolver {
+public class DatasourcePropertySourceResolver {
 
-    @Value("${example.firstProperty}") private String datasourceUrl;
-    @Value("${example.secondProperty}") private String datasourceUsername;
-    @Value("${example.secondProperty}") private String datasourcePassowrd;
+    @Value("${spring.datasource.url}") private String url;
+    @Value("${spring.datasource.username}") private String username;
+    @Value("${spring.datasource.password}") private String passowrd;
 
-    public String getFirstProperty() {
-        return firstProperty;
+    public String getUrl() {
+        return url;
     }
 
-    public String getSecondProperty() {
-        return secondProperty;
+    public String getUsername() {
+        return username;
     }
+
+    public String getPassowrd() {
+        return passowrd;
+    }
+
 }

@@ -61,6 +61,28 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- TEST CONTAINER DEPENDENCY -->		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>1.20.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- TEST CONTAINER ORACLE XE DEPENDENCY -->
+		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>oracle-xe</artifactId>
+			<version>1.20.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- ORACLE JDBC DRIVER DEPENDENCY -->
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>19.8.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
